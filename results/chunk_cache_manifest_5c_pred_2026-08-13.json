@@ -1,0 +1,127 @@
+{
+ "note": "post-hoc inventory of the on-disk chunk cache, computed 2026-08-13 after the runs; 404 chunks are zero-length",
+ "dir": "data_phase5c_2026-08-07/pred_chunks",
+ "count": 24,
+ "entries": [
+  {
+   "file": "pred_110_22_49.bin",
+   "bytes": 1776907,
+   "sha256": "588f3518227de59b9b9626d7e9e2bae17f4a2ca89b966da1cefa2e51380e95fa"
+  },
+  {
+   "file": "pred_114_59_61.bin",
+   "bytes": 4121501,
+   "sha256": "c52c8b8f5ca0d8c891b1979a0f695db935f2c19845e805d8373f58ed209bfef3"
+  },
+  {
+   "file": "pred_119_32_46.bin",
+   "bytes": 2381474,
+   "sha256": "396c4214eb92afe3cf18c82115789690ee1af140c5fc598573d0a05c424b60bf"
+  },
+  {
+   "file": "pred_123_70_62.bin",
+   "bytes": 4559829,
+   "sha256": "629a16a74d2e9c11fb1b4a55204c9776fd8a804b33d077ea2b9da52831b6ce42"
+  },
+  {
+   "file": "pred_128_43_34.bin",
+   "bytes": 2707632,
+   "sha256": "821c61089bd8e9065f4c50222caaf2b514095c255c0642355ec7a3bda26faf63"
+  },
+  {
+   "file": "pred_132_81_57.bin",
+   "bytes": 3327875,
+   "sha256": "1ea87927e04c6d4c87fd674d33ec742744da6ad9dd3954fc2fba4616acf37a67"
+  },
+  {
+   "file": "pred_137_54_37.bin",
+   "bytes": 3173834,
+   "sha256": "e0433d130d88ec83d530a043424b66d9bd96862b3703fb7b69aaad8d5c844b50"
+  },
+  {
+   "file": "pred_142_27_45.bin",
+   "bytes": 3449961,
+   "sha256": "f7cd01b61f0ab56cb763dfe5b4062fae93afff5bab26e4fa1b4758063c839ca3"
+  },
+  {
+   "file": "pred_146_65_38.bin",
+   "bytes": 3544942,
+   "sha256": "ce497155e4e20820420e634ca716707ea6fbadf2397f9532dae5a924e91d07fb"
+  },
+  {
+   "file": "pred_151_37_65.bin",
+   "bytes": 3262464,
+   "sha256": "02ef36e7f35d6de817a6d506584acff56e589cb97be50850850da714fd359cd9"
+  },
+  {
+   "file": "pred_155_76_44.bin",
+   "bytes": 1931527,
+   "sha256": "237e163e3797cea4d9c3b4ab57923d48db68f2c712667c3527396a6f40a84be6"
+  },
+  {
+   "file": "pred_160_48_53.bin",
+   "bytes": 2614534,
+   "sha256": "845a7816fe131cdf73a5942ca38cfc752ab77be10627429e1a40abfe4781991a"
+  },
+  {
+   "file": "pred_165_21_50.bin",
+   "bytes": 2500900,
+   "sha256": "d6a2c68652d64ab0a939d43ddc0dc34502256d777b428a20b90ea53b513d7ebd"
+  },
+  {
+   "file": "pred_169_59_52.bin",
+   "bytes": 3397249,
+   "sha256": "e093a3b80e80a75f2aa376c538e8ab757d543adc164395ef146d06f587e13394"
+  },
+  {
+   "file": "pred_174_32_34.bin",
+   "bytes": 3735417,
+   "sha256": "4cf81d52ce9b8e3f04fe17e45ad63f2881dd6c7f32293bba4059ae2998a09771"
+  },
+  {
+   "file": "pred_178_70_52.bin",
+   "bytes": 2840718,
+   "sha256": "fc2ad43354ea8ca353b000cc70794b24f6d3ae3a052f7415d469cac6fcba3c96"
+  },
+  {
+   "file": "pred_183_43_34.bin",
+   "bytes": 2027130,
+   "sha256": "c775f878741dfaf3724f3e9f61bda1d041a023c86138541692196e2e364cd9a0"
+  },
+  {
+   "file": "pred_187_81_47.bin",
+   "bytes": 2276030,
+   "sha256": "49eac9cce79307af51e1f6191a39535a1a6c7ee1dca6febb68f35c78a7cd4282"
+  },
+  {
+   "file": "pred_192_53_75.bin",
+   "bytes": 2914998,
+   "sha256": "b95f7b8aae0884385863c7b7fed3592ac1bda06775b69cebeecd745ecf2b3f53"
+  },
+  {
+   "file": "pred_197_27_40.bin",
+   "bytes": 2888988,
+   "sha256": "30ff6875a6ca478920d081df938c0124a82735fbad1cd0387dc3a63ed43340d8"
+  },
+  {
+   "file": "pred_201_64_76.bin",
+   "bytes": 2427987,
+   "sha256": "9b189dba99be776961793f8ceeec299c5dc015d97b2624544b83e851a4baff8f"
+  },
+  {
+   "file": "pred_206_37_52.bin",
+   "bytes": 3528962,
+   "sha256": "5a4fe1bed588a5c05f4319002f585c702c3cf13730ed610eda0810e6a9e218a2"
+  },
+  {
+   "file": "pred_210_76_35.bin",
+   "bytes": 2910150,
+   "sha256": "baab64d4b3b5b1dc1fbe40f80d3d840313ac420d8f1030f17f7b330109a18f45"
+  },
+  {
+   "file": "pred_215_48_41.bin",
+   "bytes": 3888526,
+   "sha256": "be58aec7320917d16b0b71e3a0ceae04c6b432ed7a7e73bc8a2bf6191df0ee49"
+  }
+ ]
+}

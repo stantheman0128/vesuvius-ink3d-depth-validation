@@ -1,0 +1,21 @@
+{
+ "status": "PHASEA_QA_COMPLETED",
+ "template": "P50_INTERIOR raw central 128^3 (78keV 2.4um)",
+ "search_pad_voxels": 16,
+ "ncc_peak": 0.9500201335758645,
+ "ncc_at_zero_offset": 0.8971388342534344,
+ "peak_offset_zyx_2p4um_voxels": [
+  0,
+  -1,
+  0
+ ],
+ "peak_offset_um": [
+  0.0,
+  -2.4,
+  0.0
+ ],
+ "peak_on_search_edge": false,
+ "chunks_fetched": 36,
+ "chunks_404": 0,
+ "downloaded_mb": 75.497472
+}

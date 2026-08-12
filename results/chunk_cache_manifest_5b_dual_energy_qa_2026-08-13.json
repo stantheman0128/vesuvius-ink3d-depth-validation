@@ -1,0 +1,87 @@
+{
+ "note": "post-hoc inventory of the on-disk chunk cache, computed 2026-08-13 after the runs; 404 chunks are zero-length",
+ "dir": "data_phase5b_2026-08-07/dual_energy_qa",
+ "count": 16,
+ "entries": [
+  {
+   "file": "chunk_10_43_29.bin",
+   "bytes": 2097152,
+   "sha256": "6dc9fb4c2d9ceb99ccb2d256585526b5c70e585077e359095745e8c6b6ba7a47"
+  },
+  {
+   "file": "chunk_10_43_30.bin",
+   "bytes": 2097152,
+   "sha256": "c5b019d2dbd6b4aa8d759d64133bb4426461ed06bdc4a7e705474a537ec1d38c"
+  },
+  {
+   "file": "chunk_10_44_29.bin",
+   "bytes": 2097152,
+   "sha256": "ca6ac245503aa0ab60897d4362688f15c1ac13fc10d07eaf2c60021894863fdf"
+  },
+  {
+   "file": "chunk_10_44_30.bin",
+   "bytes": 2097152,
+   "sha256": "9ebc088875e2b86719a758489c664398f7f389a37bc992cc235eeaaf9b599df8"
+  },
+  {
+   "file": "chunk_338_118_102.bin",
+   "bytes": 2097152,
+   "sha256": "a6cbbb95e0ea908111a07d0007c9a7580496c658fc6cec8d444cc55061a83b15"
+  },
+  {
+   "file": "chunk_338_118_103.bin",
+   "bytes": 2097152,
+   "sha256": "10e932e68c05a22b09c08ba3c0acfaa0edd0ba93850d512c8783906578082130"
+  },
+  {
+   "file": "chunk_338_119_102.bin",
+   "bytes": 2097152,
+   "sha256": "335de66ac9f98e11853605e061fb7c372c7f823aa4cce429fab9e4531df21428"
+  },
+  {
+   "file": "chunk_338_119_103.bin",
+   "bytes": 2097152,
+   "sha256": "4922e7df40f02e3b56060d0c1d9b4bea528946ad34285f9a784db9bf68508049"
+  },
+  {
+   "file": "chunk_339_118_102.bin",
+   "bytes": 2097152,
+   "sha256": "89c84889b042357921b1cf389dc07d970d533417b510b9e3f1748d80b4bcbdd8"
+  },
+  {
+   "file": "chunk_339_118_103.bin",
+   "bytes": 2097152,
+   "sha256": "9074dfba3cee37597af20a19c48a000ea6e7e31584c25b5df3f1c0e4ad5d889a"
+  },
+  {
+   "file": "chunk_339_119_102.bin",
+   "bytes": 2097152,
+   "sha256": "c0d1804282dcf8cd7015f41b21b64a67022eee1b6d3c99deb84ea79389aab866"
+  },
+  {
+   "file": "chunk_339_119_103.bin",
+   "bytes": 2097152,
+   "sha256": "e3670c076daaf02e634113522120afeba06435b101d7c1e16539773a677b5269"
+  },
+  {
+   "file": "chunk_9_43_29.bin",
+   "bytes": 2097152,
+   "sha256": "0bc7b565fe7d0a23bc7d2481c7ca0b57dea06709cdb9991e9e2787f4a7e6392b"
+  },
+  {
+   "file": "chunk_9_43_30.bin",
+   "bytes": 2097152,
+   "sha256": "4d15f2fa78a2da5a33e56adc71f69b29e427a1e962f4f1bc5e6ad1219c78e959"
+  },
+  {
+   "file": "chunk_9_44_29.bin",
+   "bytes": 2097152,
+   "sha256": "1bbc767251fdbd446d2dec5df8c58e1ebf7fe01ce61f0783e73ba0a5f15f361f"
+  },
+  {
+   "file": "chunk_9_44_30.bin",
+   "bytes": 2097152,
+   "sha256": "d81ac9d799e3d8a73fd7681a168d8abe9f6c296fdf160e1ed9220888c4e32b34"
+  }
+ ]
+}
