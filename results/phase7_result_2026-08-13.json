@@ -1,0 +1,15 @@
+{
+ "preregistration": "PHASE7_PREREGISTRATION_W00_DEPTH_VALIDATED_LABELS_2026-08-13.md",
+ "n_nodes": 148,
+ "n_eval": 148,
+ "s_star_quartiles": [
+  -2.0,
+  0.5,
+  3.25
+ ],
+ "D_le_3_fraction": 0.5608108108108109,
+ "tiles_written": 759,
+ "label_zarr": "data_phase7_w00_2026-08-13/w00_20231016151002_inklabels_v5.zarr",
+ "qc_zarr": "data_phase7_w00_2026-08-13/w00_20231016151002_inklabels_v5_qc.zarr",
+ "validated_ink_fraction": 0.035134238634864534
+}

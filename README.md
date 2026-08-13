@@ -18,6 +18,30 @@ numbers, and claim limits are in [REPORT.md](REPORT.md).
 This validates depth geometry only. It never measures ink identity, and the
 report states that boundary explicitly.
 
+## Update 2026-08-13: dual-energy replication and a first label artifact
+
+Two additions after the original report:
+
+- **Phase 6, energy-independent replication.** The same construct run against
+  the 137keV scan (independent in beam physics, not only in scan session),
+  with a preregistered per-cube NCC correction gate (two of twelve cubes
+  failed the gate and were excluded whole). Result: 51 of 68 evaluable
+  anchors within 3 voxels of the independently measured surface, exact
+  binomial p = 3.0e-15. Three disjoint samples now agree (76%, 70%, 75%
+  localized). See `phase6_result_2026-08-13.json`.
+- **Phase 7, a depth-validated label artifact.** For segment
+  `w00_20231016151002`, a full-resolution 3D label zarr whose depth is
+  corrected by surface positions measured in the 1.129um scan at 148
+  preregistered nodes, with a QC sidecar (correction field, per-node
+  distance, validation status). At validated nodes the published annotation
+  plane sits a median of 0.5 voxels from the independent surface. Honest
+  limit: only 3.5% of ink pixels fall inside the validated region, because
+  the 1.129um footprint covers part of the segment; the rest keep the
+  published plane and are flagged unvalidated. The artifact stays local
+  (data redistribution terms); the generator and journals are here.
+
+![Depth quality map](depth_quality_map_2026-08-13.png)
+
 ## Layout
 
 - `REPORT.md`: the full write-up.

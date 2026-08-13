@@ -1,0 +1,20 @@
+[
+ {
+  "path": "ink/phercparis4/w00_20231016151002/x.tif",
+  "listed_size": 66674124,
+  "bytes": 66674124,
+  "sha256": "7a7bf1443fcba0f6d3f5b44f8199edc655f3d7be92647842578255ec112cc834"
+ },
+ {
+  "path": "ink/phercparis4/w00_20231016151002/y.tif",
+  "listed_size": 66674124,
+  "bytes": 66674124,
+  "sha256": "55b391e8263a0de226daa22220f1dbf53ef508cb95b5dee691cf0de04089d169"
+ },
+ {
+  "path": "ink/phercparis4/w00_20231016151002/z.tif",
+  "listed_size": 66674124,
+  "bytes": 66674124,
+  "sha256": "ef8120285a642997ea3f188c23c11fb9617ad26c41265171ca3ab62e1c91b176"
+ }
+]
