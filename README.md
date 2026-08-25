@@ -42,6 +42,21 @@ Two additions after the original report:
 
 ![Depth quality map](depth_quality_map_2026-08-13.png)
 
+## Update 2026-08-25: khj1222 w00 measured band (Phase 8)
+
+khj1222 asked on villa #192 whether the per-pixel wander of their `v4` band
+tracks a real structure or is estimator noise. Phase 8 scores the exported
+`w00` center-cell anchors against the same 1.129um scan, without flipping
+the sidecar normal.
+
+The independent scan only covers a sliver of `w00`. Of 5396 center cells,
+164 have at least one profile sample inside the array; all 164 were scored.
+157 were evaluable. Median D = 2.0 voxels, IQR = 2.0, 118/157 have D <= 3.
+All evaluable cells sit in their region 15; the other annotated regions are
+outside this footprint. Per-anchor records are in
+`results/phase8_result_2026-08-25.json`. Same claim boundary as before:
+distance to an independently observed surface, not ink identity.
+
 ## Layout
 
 - `REPORT.md`: the full write-up.
