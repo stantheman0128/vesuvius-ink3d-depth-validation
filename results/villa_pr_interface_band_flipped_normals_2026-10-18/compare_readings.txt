@@ -1,10 +1,10 @@
-[sigma0] evaluable in both runs: 164
-  point displacement in reference voxels: median 5.52, min 0.27, max 31.26
-  within 3 voxels on the common set: original 123, negated 114; same verdict 105/164
-  D unchanged 26, farther 69, closer 69, median |dD| 2.00
-  inside_brighter defined in both: 92; same 46, opposite 46
-[sigma2] evaluable in both runs: 162
-  point displacement in reference voxels: median 5.52, min 0.27, max 31.26
-  within 3 voxels on the common set: original 97, negated 94; same verdict 101/162
-  D unchanged 27, farther 68, closer 67, median |dD| 2.00
-  inside_brighter defined in both: 98; same 55, opposite 43
+[sigma0] evaluable in both runs: 163 (rows with evaluable == True in both files)
+  point displacement in reference voxels: median 5.51, min 0.27, max 31.26
+  within 3 voxels on the common set: original 122, negated 113; same verdict 104/163
+  D unchanged 25, farther 69, closer 69, median |dD| 2.00
+  inside_brighter defined in both: 91; same 45, opposite 46
+[sigma2] evaluable in both runs: 161 (rows with evaluable == True in both files)
+  point displacement in reference voxels: median 5.51, min 0.27, max 31.26
+  within 3 voxels on the common set: original 96, negated 93; same verdict 100/161
+  D unchanged 27, farther 67, closer 67, median |dD| 2.00
+  inside_brighter defined in both: 97; same 54, opposite 43
