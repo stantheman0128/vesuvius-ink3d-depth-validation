@@ -148,12 +148,20 @@ def measure_profile(ref_prof):
 
 
 def chunk_keys_for_points(pts_zyx, Ai, t):
+    """Chunks covering floor and ceil of each inside sample (trilinear stencil)."""
     q = canonical_to_ref_zyx(pts_zyx, Ai, t)
-    inside = np.all(q >= 0, axis=1) & np.all(q <= (np.array(REF_SHAPE_ZYX) - 1), axis=1)
+    shape = np.array(REF_SHAPE_ZYX)
+    inside = np.all(q >= 0, axis=1) & np.all(q <= (shape - 1), axis=1)
     if not np.any(inside):
         return set(), q, inside
-    qc = np.floor(q[inside]).astype(int) // CHUNK
-    return {tuple(int(x) for x in cc) for cc in np.unique(qc, axis=0)}, q, inside
+    q_in = q[inside]
+    flo = np.floor(q_in).astype(int)
+    cei = np.minimum(np.ceil(q_in).astype(int), shape - 1)
+    keys = set()
+    for pts in (flo, cei):
+        qc = pts // CHUNK
+        keys.update(tuple(int(x) for x in cc) for cc in np.unique(qc, axis=0))
+    return keys, q, inside
 
 
 def assemble_store(chunks, journal):
@@ -167,17 +175,35 @@ def assemble_store(chunks, journal):
 
 
 def sample_ref(q, store):
+    """Trilinear sample of reference voxels at q (N,3) zyx.
+
+    Assembles a sub-volume from cached chunks so order-1 interpolation can
+    cross chunk faces. Sampling each 128^3 block alone returns cval=0 for any
+    local coordinate > 127 (fractional samples on the high face).
+    """
+    q = np.asarray(q, float)
     vals = np.zeros(len(q), float)
-    for i, pt in enumerate(q):
-        if np.any(pt < 0) or np.any(pt > (np.array(REF_SHAPE_ZYX) - 1)):
-            continue
-        cz, cy, cx = (np.floor(pt).astype(int) // CHUNK)
-        blk = store.get((int(cz), int(cy), int(cx)))
-        if blk is None:
-            continue
-        local = pt - np.array([cz, cy, cx]) * CHUNK
-        vals[i] = map_coordinates(blk.astype(np.float32), local[:, None],
-                                  order=1, mode="constant", cval=0.0)[0]
+    shape = np.array(REF_SHAPE_ZYX)
+    inside = np.all(q >= 0, axis=1) & np.all(q <= (shape - 1), axis=1)
+    if not np.any(inside):
+        return vals
+    q_in = q[inside]
+    flo = np.floor(q_in.min(axis=0)).astype(int)
+    cei = np.minimum(np.ceil(q_in.max(axis=0)).astype(int), shape - 1)
+    k0 = flo // CHUNK
+    k1 = cei // CHUNK
+    sub = np.zeros(tuple((k1 - k0 + 1) * CHUNK), np.float32)
+    for cz in range(int(k0[0]), int(k1[0]) + 1):
+        for cy in range(int(k0[1]), int(k1[1]) + 1):
+            for cx in range(int(k0[2]), int(k1[2]) + 1):
+                blk = store.get((cz, cy, cx))
+                if blk is None:
+                    continue
+                oz, oy, ox = (np.array([cz, cy, cx]) - k0) * CHUNK
+                sub[oz:oz + CHUNK, oy:oy + CHUNK, ox:ox + CHUNK] = blk
+    sub_origin = k0 * CHUNK
+    vals[inside] = map_coordinates(sub, (q_in - sub_origin).T, order=1,
+                                   mode="constant", cval=0.0)
     return vals
 
 
